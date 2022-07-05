@@ -1,0 +1,139 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1.5rem;
+}
+
+.navbar-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 2.2rem;
+    margin-right: .3rem;
+}
+
+.navbar-logo .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    padding: .5rem;
+}
+
+.navbar-brand strong {
+    font-size: 1rem;
+    color: var(--white);
+    display: block;
+    width: 100%;
+    margin: 0 0 .5rem 0;
+}
+
+.navbar-brand .brand_bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--yellow);
+    margin: 0;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.navbar-toggler svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--white);
+}
+
+.navbar-menu {
+    width: 100%;
+    height:  300px;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    background-color: var(--white);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-menu.show {
+    left: 0;
+}
+
+.navbar-menu .menu_title {
+    max-height: 100%;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+.navbar-menu .menu_button{
+    margin-top: 1rem;
+}
+
+ /* responsive  */
+
+ /* * 900px >  */
+    @media (min-width: 900px) {
+        .navbar{
+            flex-wrap: nowrap;
+        }
+
+        .navbar-logo {
+            flex-basis: 20%;
+        }
+        .navbar-toggler {
+            display: none;
+        }
+        .navbar-logo img {
+            width: 3.5rem;
+        }
+
+        .navbar-brand strong {
+            font-size: 1.5rem;
+        }
+        .navbar-brand .brand_bar {
+            height: 4px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            flex-basis: 80%;
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+
+        .navbar-menu .menu_title {
+            display: none;
+        }
+
+    }
