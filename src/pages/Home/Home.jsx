@@ -19,7 +19,7 @@ const Home = () => {
 
 				<div className="home-content">
 					{movies.map(movie => (
-						<div className="movie-card" key={movie.id}>
+						<div className="movie-card" key={movie.id} id={movie.id}>
 							<Poster title={movie.title} image={movie.image} />
 						</div>
 					))}
