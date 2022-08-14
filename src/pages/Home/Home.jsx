@@ -2,8 +2,10 @@ import React from 'react'
 import { Navbar } from '../../components/Navbar/Navbar'
 
 import { movies } from '../../data/Movies'
+import { ButtonIcon } from '../../shared/components/ButtonIcon/ButtonIcon'
 import { Poster } from '../../shared/components/Poster/Poster'
 
+import icon from '../../assets/img/claqueta.svg'
 import './Home.css'
 
 
@@ -24,6 +26,7 @@ const Home = () => {
 						</div>
 					))}
 				</div>
+					<ButtonIcon text={"ver mas peliculas"} icon={icon}/>
 			</div>
 		</>
 	)
