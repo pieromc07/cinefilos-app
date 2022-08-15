@@ -1,9 +1,9 @@
 import React from 'react'
-import { Navbar } from '../../components/Navbar/Navbar'
 
 export const Movies = () => {
 	return (
 		<>
+			<h1> Movies </h1>
 		</>
 	)
 }

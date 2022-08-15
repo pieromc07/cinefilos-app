@@ -1,8 +1,7 @@
 import React from 'react'
-import { Navbar } from '../../components/Navbar/Navbar'
 
 import { movies } from '../../data/Movies'
-import { ButtonIcon } from '../../shared/components/ButtonIcon/ButtonIcon'
+import { LinkIcon } from '../../shared/components/LinkIcon/LinkIcon'
 import { Poster } from '../../shared/components/Poster/Poster'
 
 import icon from '../../assets/img/claqueta.svg'
@@ -25,7 +24,7 @@ const Home = () => {
 						</div>
 					))}
 				</div>
-				<ButtonIcon text={"ver mas peliculas"} icon={icon} />
+				<LinkIcon text={"ver mas peliculas"} icon={icon} to={'/movies'} />
 			</div>
 		</>
 	)
