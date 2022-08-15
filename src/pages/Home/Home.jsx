@@ -12,7 +12,6 @@ import './Home.css'
 const Home = () => {
 	return (
 		<>
-			<Navbar />
 			<div className="home-container">
 				<div className="home-title">
 					<h1 className="title">Cartelera</h1>
@@ -26,7 +25,7 @@ const Home = () => {
 						</div>
 					))}
 				</div>
-					<ButtonIcon text={"ver mas peliculas"} icon={icon}/>
+				<ButtonIcon text={"ver mas peliculas"} icon={icon} />
 			</div>
 		</>
 	)
